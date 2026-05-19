@@ -607,3 +607,64 @@ body {
         order: 1;
     }
 }
+
+/* ============================================
+   RESPONSIVE STYLES - TABLET PORTRAIT < 768px
+============================================ */
+@media (max-width: 768px) {
+    /* Header */
+    .navbar-toggle {
+        display: flex;
+    }
+    
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background: rgba(8, 27, 41, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        transition: right 0.3s ease;
+        padding-top: 60px;
+    }
+    
+    .navbar.active {
+        right: 0;
+    }
+    
+    .nav-link {
+        font-size: 1.2rem;
+        padding: 12px 25px;
+    }
+    
+    .navbar-toggle.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .navbar-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .navbar-toggle.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    
+    /* Home */
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 6% 40px;
+        gap: 30px;
+    }
+    
+    .home-content {
+        max-width: 100%;
+        order: 2;
+    }
+}
