@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <script>
-        
+    // Header scroll effect
     const header = document.getElementById('header');
     
     window.addEventListener('scroll', () => {
@@ -17,6 +17,7 @@
         }
     });
 
+    // Mobile menu toggle
     const navbarToggle = document.getElementById('navbar-toggle');
     const navbar = document.getElementById('navbar');
     
@@ -25,6 +26,7 @@
         navbar.classList.toggle('active');
     });
 
+    // Close mobile menu when clicking a link
     const navLinks = document.querySelectorAll('.nav-link');
     
     navLinks.forEach(link => {
@@ -34,7 +36,7 @@
         });
     });
 
-
+    // Active section highlighting on scroll
     const sections = document.querySelectorAll('section');
     const navLinksAll = document.querySelectorAll('.nav-link');
     
@@ -63,7 +65,7 @@
     <header class="header" id="header">
     <a href="#home" class="logo">MICHAEL</a>
 
-     <div class="navbar-toggle" id="navbar-toggle">
+    <div class="navbar-toggle" id="navbar-toggle">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -75,7 +77,7 @@
         <a href="#projects" class="nav-link">PROJECTS</a>
         <a href="#contact" class="nav-link">CONTACT</a>
     </nav>
-    </header>
+</header>
 
     <section id="home" class="home">
     <div class="home-content">
@@ -91,12 +93,12 @@
     
     <div class="home-img">
         <div class="img-box">
-            <img src="" alt="Michael Matugas">
+            <img src="profile.png" alt="Michael Matugas">
         </div>
     </div>
 </section>
 
- <section id="about" class="about-container">
+    <section id="about" class="about-container">
     <h1 class="about-title">About Me</h1>
     
     <div class="about-content">
@@ -125,6 +127,7 @@
             </div>
         </div>
         
+        <!-- Right Side - Description -->
         <div class="about-right">
             <p>
                 I am a second-year Information Technology student at Cavite State University - Imus Campus with a passion for building functional, creative digital solutions. I thrive at the intersection of technical development and visual design, focusing on creating tools that provide real-world value.
@@ -143,6 +146,7 @@
     </div>
 </section>
 
+<!-- PROJECTS SECTION -->
 <section id="projects" class="projects-container">
     <h1 class="section-title">Projects</h1>
     
@@ -202,6 +206,7 @@
     </div>
 </section>
 
+<!-- CONTACT SECTION -->
 <section id="contact" class="contact-container">
     <h1 class="section-title">Contact Me</h1>
     

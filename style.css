@@ -1,3 +1,6 @@
+/* ============================================
+   BASE STYLES & RESET
+============================================ */
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +23,10 @@ body {
     min-width: 320px;
     overflow-x: hidden;
 }
+
+/* ============================================
+   HEADER STYLES - DESKTOP & TABLET
+============================================ */
 .header {
     position: fixed;
     top: 0;
@@ -101,6 +108,7 @@ body {
     width: 50%;
 }
 
+/* Mobile Menu Toggle */
 .navbar-toggle {
     display: none;
     flex-direction: column;
@@ -118,6 +126,9 @@ body {
     border-radius: 2px;
 }
 
+/* ============================================
+   HOME SECTION - DESKTOP
+============================================ */
 .home {
     min-height: 100vh;
     display: flex;
@@ -215,6 +226,9 @@ body {
     border-radius: 50%;
 }
 
+/* ============================================
+   ABOUT SECTION - DESKTOP
+============================================ */
 .about-container {
     min-height: 100vh;
     padding: 100px 7% 50px;
@@ -331,6 +345,9 @@ body {
     font-weight: 500;
 }
 
+/* ============================================
+   PROJECTS SECTION - DESKTOP
+============================================ */
 .projects-container {
     min-height: 100vh;
     padding: 100px 7% 50px;
@@ -434,6 +451,9 @@ body {
     color: #081b29;
 }
 
+/* ============================================
+   CONTACT SECTION - DESKTOP
+============================================ */
 .contact-container {
     min-height: 100vh;
     padding: 100px 7% 50px;
@@ -542,7 +562,9 @@ body {
     font-weight: 600;
 }
 
-
+/* ============================================
+   RESPONSIVE STYLES - LAPTOP < 1200px
+============================================ */
 @media (max-width: 1200px) {
     .home-img .img-box {
         width: 300px;
@@ -562,6 +584,9 @@ body {
     }
 }
 
+/* ============================================
+   RESPONSIVE STYLES - TABLET LANDSCAPE < 1024px
+============================================ */
 @media (max-width: 1024px) {
     .home {
         padding: 80px 8% 40px;
@@ -600,8 +625,11 @@ body {
     }
 }
 
-
+/* ============================================
+   RESPONSIVE STYLES - TABLET PORTRAIT < 768px
+============================================ */
 @media (max-width: 768px) {
+    /* Header */
     .navbar-toggle {
         display: flex;
     }
@@ -644,7 +672,7 @@ body {
         transform: rotate(-45deg) translate(5px, -5px);
     }
     
-    
+    /* Home */
     .home {
         flex-direction: column;
         text-align: center;
