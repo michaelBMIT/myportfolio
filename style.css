@@ -101,6 +101,23 @@ body {
     width: 50%;
 }
 
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.navbar-toggle .bar {
+    width: 25px;
+    height: 2px;
+    background: #ededed;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
 .home {
     min-height: 100vh;
     display: flex;
@@ -196,4 +213,120 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.about-container {
+    min-height: 100vh;
+    padding: 100px 7% 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 50px;
+    align-items: start;
+    flex-grow: 1;
+}
+
+.about-left h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.toolkit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.toolkit-item {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.toolkit-item:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(0, 171, 240, 0.4);
+    transform: translateY(-3px);
+}
+
+.toolkit-item h4 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    color: #fff;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.toolkit-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.toolkit-item li {
+    font-size: 0.85rem;
+    color: #d1d5db;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    padding-left: 15px;
+    position: relative;
+}
+
+.toolkit-item li::before {
+    content: "•";
+    color: #00abf0;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.about-right {
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+}
+
+.about-right p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #d1d5db;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.about-right p:first-child {
+    font-size: 1.05rem;
+    color: #ededed;
+}
+
+.about-highlights {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.highlight-tag {
+    background: rgba(0, 171, 240, 0.15);
+    border: 1px solid rgba(0, 171, 240, 0.3);
+    color: #00abf0;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
